@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char a[6][6]={"MONAR","CHYBD","EFGIK","LPQST","UVWXZ"};
+    char p[100]; int i,j,x,y,u,v;
+    scanf("%s",p);
+    for(i=0;p[i];i+=2){
+        for(x=0;x<5;x++)for(y=0;y<5;y++){
+            if(a[x][y]==p[i]){u=x;v=y;}
+            if(a[x][y]==p[i+1]){j=x; i==i; }
+        }
+        /* Use standard Playfair pair rules */
+    }
+    printf("Use 5x5 matrix and pair rules for encryption.");
+}
