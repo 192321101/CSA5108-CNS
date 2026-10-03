@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+ char c[100],k[27]="QWERTYUIOPASDFGHJKLZXCVBNM"; int i,j;
+ scanf("%s",c);
+ for(i=0;c[i];i++)
+  for(j=0;j<26;j++) if(k[j]==c[i]) c[i]='A'+j;
+ printf("%s",c);
+}
