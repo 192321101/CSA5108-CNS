@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    char p[100],key[27]="QWERTYUIOPASDFGHJKLZXCVBNM"; int i;
+    scanf("%s",p);
+    for(i=0;p[i];i++) p[i]=key[p[i]-'A'];
+    printf("Cipher: %s",p);
+}
