@@ -1,9 +1,0 @@
-#include <stdio.h>
-int main(){
-    char c[500],key[27],*p;
-    gets(c);
-    scanf("%s",key);
-    for(p=c;*p;p++)
-        if(*p>='A'&&*p<='Z') *p=key[*p-'A'];
-    printf("%s",c);
-}
